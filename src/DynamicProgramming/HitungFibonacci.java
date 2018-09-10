@@ -1,5 +1,6 @@
 package DynamicProgramming;
 import java.util.Scanner;
+import java.math.BigInteger;
 public class HitungFibonacci {
     public static void tampilJudul(String identitas)
     {
@@ -23,4 +24,21 @@ public class HitungFibonacci {
     }
     
     int n tampilInput();
+    
+    private static BigInteger fibo(int n)
+    {
+        BigInteger[] hasil = new BigInteger[n];
+        
+        hasil[0] = BigInteger.ONE;
+        hasil[1] = BigInteger.ONE;
+        
+        for (int i = 0; i < hasil.length; i++) 
+        {
+            hasil[i] = hasil[i-1].add(hasil[1-2]);
+        }
+        
+        return hasil[n-1];
+    }
+    
+    BigInteger hasil = fibo(n);
 }
