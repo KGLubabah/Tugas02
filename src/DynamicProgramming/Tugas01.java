@@ -34,4 +34,26 @@ public class Tugas01 {
             }
         }
     }
+    
+    
+    
+    public static void main(String[] args) 
+    {
+        System.out.println("Khairis Ghifariy Lubabah / XR3 / 15");
+        System.out.println("");
+        
+        System.out.println("--------------------------------");
+        System.out.println("Hitung Jumlah Pecahan Minimal");
+        System.out.println("--------------------------------");
+        System.out.println("");
+        
+        System.out.println("Pecahan Yang Tersedia");
+        System.out.println("100, 500, 1000, 2000, 5000");
+        System.out.println("");
+        
+        int uang = input();
+        int [] data = new int[] {5000, 2000, 1000, 500, 100};
+        
+        JumlahUang(uang, data);
+    }
 }
