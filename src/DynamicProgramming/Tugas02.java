@@ -55,5 +55,8 @@ public class Tugas02 {
         }
         System.out.println("Banyak Uang Berjenis Barang C Sebanyak : Rp" + (c * 2000));
         System.out.println("");
+        
+        t = (e * 10000) + (b * 5000) + (a * 5000) + (d * 3000) + (c * 2000);
+        System.out.println("Total : " + t);
     }
 }
